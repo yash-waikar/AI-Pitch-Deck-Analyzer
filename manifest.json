@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "My Pitch Deck Analyzer",
+    "name": "Pitch Deck Analyzer",
     "version": "1.0",
     "description": "Analyzes pitch deck content using PDF.js and OpenAI API.",
     "permissions": [
