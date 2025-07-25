@@ -33,7 +33,6 @@ document.getElementById('analyzeButton').addEventListener('click', () => {
     }
   });
 async function analyzeContent(content) {
-  const apiKey = 'sk-proj-bwcUaU9PE7H7xKFHdPkrT3BlbkFJVRajEVmK07EziOG7zyVX';  // Replace with your OpenAI API key
   const apiUrl = 'https://api.openai.com/v1/engines/davinci-codex/completions';
 
   try {
@@ -43,7 +42,7 @@ async function analyzeContent(content) {
     }, {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`
+        'Authorization': `Bearer ${env.apiKey}`
       }
     });
 
